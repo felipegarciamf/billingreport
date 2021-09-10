@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>br.com.billingreport</groupId>
 	<artifactId>billingreport</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>billingreport</name>
 	<description>Projeto de Billing Report</description>
 	<properties>
