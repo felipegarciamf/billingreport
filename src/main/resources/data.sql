@@ -1,0 +1,1 @@
+/* INSERT INTO usuario (nome, email, senha) VALUES ("silas", "silas", "teste"); */
