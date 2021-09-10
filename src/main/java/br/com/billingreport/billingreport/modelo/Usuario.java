@@ -1,5 +1,6 @@
 package br.com.billingreport.billingreport.modelo;
 
+import java.time.LocalDateTime;
 import java.util.Collection;
 
 import javax.persistence.Entity;
@@ -30,6 +31,12 @@ public class Usuario implements UserDetails {
 
 	private String senha;
 
+	private LocalDateTime dataDaCriacao = LocalDateTime.now();
+
+	public LocalDateTime getDataDaCriacao() {
+		return dataDaCriacao;
+	}
+
 	public String getCpf() {
 		return cpf;
 	}
@@ -41,7 +48,6 @@ public class Usuario implements UserDetails {
 	public Long getId() {
 		return id;
 	}
-	
 
 	public String getEmail() {
 		return email;
