@@ -1,4 +1,4 @@
-package br.com.billingreport.billingreport.modelo;
+package br.com.billingreport.modelo;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
@@ -13,11 +13,22 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
 public class Usuario implements UserDetails {
+	
+	
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
+	
+
+	public Usuario() {
+		
+	}
+	
+	public Usuario(String nome, String cpf, String email, String senha) {
+		this.nome = nome;
+		this.cpf = cpf;
+		this.email = email;
+		this.senha = senha;
+	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

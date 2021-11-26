@@ -1,4 +1,4 @@
-package br.com.billingreport.billingreport.controller;
+package br.com.billingreport.controller;
 
 import java.util.Optional;
 
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.billingreport.billingreport.dto.UsuarioDto;
-import br.com.billingreport.billingreport.form.LoginForm;
-import br.com.billingreport.billingreport.modelo.Usuario;
-import br.com.billingreport.billingreport.repository.UsuarioRepository;
+import br.com.billingreport.dto.UsuarioDto;
+import br.com.billingreport.form.LoginForm;
+import br.com.billingreport.modelo.Usuario;
+import br.com.billingreport.repository.UsuarioRepository;
 
 
 @RestController

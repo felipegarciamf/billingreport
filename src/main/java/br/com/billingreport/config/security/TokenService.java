@@ -1,4 +1,4 @@
-package br.com.billingreport.billingreport.config.security;
+package br.com.billingreport.config.security;
 
 import java.util.Date;
 
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
-import br.com.billingreport.billingreport.modelo.Usuario;
+import br.com.billingreport.modelo.Usuario;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

@@ -1,11 +1,11 @@
-package br.com.billingreport.billingreport.config.swagger;
+package br.com.billingreport.config.swagger;
 
 import java.util.Arrays;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import br.com.billingreport.billingreport.modelo.Usuario;
+import br.com.billingreport.modelo.Usuario;
 import springfox.documentation.builders.ParameterBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -13,6 +13,7 @@ import springfox.documentation.schema.ModelRef;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
+	
 @Configuration
 public class SwaggerConfigurations {
 
@@ -21,7 +22,7 @@ public class SwaggerConfigurations {
 		
 		return new Docket(DocumentationType.SWAGGER_2).
 				select()
-				.apis(RequestHandlerSelectors.basePackage("br.com.utiauto"))
+				.apis(RequestHandlerSelectors.basePackage("br.com.billingreport"))
 				.paths(PathSelectors.ant("/**"))
 				.build()
 				.ignoredParameterTypes(Usuario.class)

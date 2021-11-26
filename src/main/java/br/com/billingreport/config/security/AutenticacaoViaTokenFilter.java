@@ -1,4 +1,4 @@
-package br.com.billingreport.billingreport.config.security;
+package br.com.billingreport.config.security;
 
 import java.io.IOException;
 import java.util.Optional;
@@ -12,8 +12,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import br.com.billingreport.billingreport.modelo.Usuario;
-import br.com.billingreport.billingreport.repository.UsuarioRepository;
+import br.com.billingreport.modelo.Usuario;
+import br.com.billingreport.repository.UsuarioRepository;
 
 public class AutenticacaoViaTokenFilter extends OncePerRequestFilter {
 

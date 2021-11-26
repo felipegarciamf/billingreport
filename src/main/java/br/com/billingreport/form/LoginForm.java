@@ -1,4 +1,4 @@
-package br.com.billingreport.billingreport.form;
+package br.com.billingreport.form;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 

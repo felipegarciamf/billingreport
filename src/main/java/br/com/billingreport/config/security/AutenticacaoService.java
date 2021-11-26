@@ -1,4 +1,4 @@
-package br.com.billingreport.billingreport.config.security;
+package br.com.billingreport.config.security;
 
 import java.util.Optional;
 
@@ -8,8 +8,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import br.com.billingreport.billingreport.modelo.Usuario;
-import br.com.billingreport.billingreport.repository.UsuarioRepository;
+import br.com.billingreport.modelo.Usuario;
+import br.com.billingreport.repository.UsuarioRepository;
 
 @Service
 public class AutenticacaoService implements UserDetailsService {

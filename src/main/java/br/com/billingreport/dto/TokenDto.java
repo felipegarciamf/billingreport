@@ -1,4 +1,4 @@
-package br.com.billingreport.billingreport.dto;
+package br.com.billingreport.dto;
 
 public class TokenDto {
 
